@@ -1,0 +1,89 @@
+/* CSS for CPR123 Class Enrollment Watch */
+/* Copyright 2013 Paul Logston */
+
+* {
+    margin: 0px auto;
+    padding: 0px;
+    font-family: Courier;
+}
+
+div#page_header{
+    display: table;
+    width: 100%;
+    height: 45px;
+
+    background: #ffd0cb; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffd0cb 0%, #febcbc 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffd0cb), color-stop(100%,#febcbc)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffd0cb 0%,#febcbc 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffd0cb 0%,#febcbc 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffd0cb 0%,#febcbc 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ffd0cb 0%,#febcbc 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd0cb', endColorstr='#febcbc',GradientType=0 ); /* IE6-9 */
+}
+
+h3 {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 35px;
+}
+
+h3 a{
+    text-decoration: none;
+    color: #000;
+}
+
+.class_item{
+    padding: 10px;
+}
+
+.class_title{
+    margin-left: 30px;
+    padding: 4px 4px 4px 4px;
+    width: 600px;
+
+}
+
+.class_title a{
+    margin-left: 15px; 
+    text-decoration: none;
+    color: #004799;
+}
+
+div.class_details{
+    margin-left: 30px;
+    width: 606px;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+div.class_details span.left{
+    margin-left: 5px;
+}
+
+div.class_details span.center {
+    position: relative;
+    left:40px;
+}
+
+div.class_details span.right{
+    position: absolute;
+    left: 400px;
+}
+
+.gradient{
+    background: #a1d0ff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #a1d0ff 0%, #89c4ff 44%, #6bb5ff 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a1d0ff), color-stop(44%,#89c4ff), color-stop(100%,#6bb5ff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #a1d0ff 0%,#89c4ff 44%,#6bb5ff 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #a1d0ff 0%,#89c4ff 44%,#6bb5ff 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #a1d0ff 0%,#89c4ff 44%,#6bb5ff 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #a1d0ff 0%,#89c4ff 44%,#6bb5ff 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1d0ff', endColorstr='#6bb5ff',GradientType=0 ); /* IE6-9 */
+}
+
+.enrollment_data_point{
+    margin-left: 20px;
+    font-size: 11px;
+}

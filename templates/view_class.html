@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title> CPR123 Class Enrollment Watcher </title>
+        <link rel="stylesheet" href="templates/css/style.css" type="text/css" />
+
+    </head>
+    <body>
+        <div id="page_header">
+            <h3><a href="/">CPR123 Class Enrollment Watcher</a></h3>
+        </div>
+        <div class="class_title gradient">
+            {{ class_name }}   
+        </div>
+        <div class="class_details">
+            <span class="left">{{ date_time }}</span>
+            <span class="center">{{ location }}</span>
+            <span class="right">{{ instructor }}</span>
+        </div>
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <h5>Enrollment Data Points</h5>
+        {% for enrollment in enrollment_objs %}
+            <div class="enrollment_data_point">
+                Timestamp: {{ enrollment.collect_time }}
+                P: {{ enrollment.enrollment_primary }}
+                S: {{ enrollment.enrollment_secondary }}
+            </div>
+        {% endfor %}
+    </body>
+</html>

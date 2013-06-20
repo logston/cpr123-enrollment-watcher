@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Collected CPR123 Classes </title>
+    </head>
+    <body>
+        {% for class in classes %}
+            <div>
+                <h4>
+                    {{ class['name'] }}
+                </h4>
+                <ul>
+                    <li>{{ class['key_name'] }}</li>
+                    <li>{{ class['date_time'] }}</li>
+                    <li>{{ class['location'] }}</li>
+                    <li>{{ class['instructor'] }}</li>
+                    <li>{{ class['enrollment_primary'] }}</li>
+                    <li>{{ class['enrollment_secondary'] }}</li>
+                    <li>{{ class['enrollment_cap'] }}</li>
+                </ul>
+            </div>
+        {% endfor %}
+    </body>
+</html>

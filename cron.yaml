@@ -1,4 +1,1 @@
 cron:
-- description: enrollment + class update
-  url: /CollectClassData
-  schedule: every 1 hours

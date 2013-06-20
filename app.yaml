@@ -1,17 +1,16 @@
-application: cpr123-enrollment-watch
-version: 1
+application: cpr123-enrollment-watch-v2
+version: 3
 runtime: python27
 api_version: 1
-threadsafe: true
+threadsafe: false
 
 handlers:
 
-- url: /templates/css
-  static_dir: templates/css
+- url: /templates/bootstrap
+  static_dir: templates/bootstrap
 
 - url: /.*
-  script: class_list_grabber_gae.app
-
+  script: controller.app
 
 libraries:
 - name: jinja2

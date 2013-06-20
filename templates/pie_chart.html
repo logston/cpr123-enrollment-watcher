@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Veiw Results | Pie Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="templates/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load('visualization', '1', {packages: ['corechart']});
+    </script>
+    <script type="text/javascript">
+      function drawVisualization() {
+        // Create and populate the data table.
+        var data = google.visualization.arrayToDataTable([
+          {% for zc in zip_code_dist %}
+            [{{ zc[0]|safe }}, {{ zc[1] }}],
+          {% endfor %}
+          ]);
+         
+        // Create and draw the visualization.
+        new google.visualization.PieChart(document.getElementById('visualization')).
+            draw(data, {title:"Zip Code Distribution"});
+      }
+
+      google.setOnLoadCallback(drawVisualization);
+      </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="page-header">
+        <h1>Breakdown</h1>
+      </div>
+      <div class="row">
+        <div class="span12">
+          <div id="visualization" style="width: 600px; height: 400px;"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="templates/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
